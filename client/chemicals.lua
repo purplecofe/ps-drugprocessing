@@ -42,11 +42,11 @@ local function createChemicalMenu()
             header = Lang:t("menu.close"),
 			txt = Lang:t("menu.closetxt"),
 			params = {
-                event = exports['qb-menu']:closeMenu(),
+                event = exports['ps-ui']:closeMenu(),
             }
         },
     }
-    exports['qb-menu']:openMenu(chemMenu)
+    exports['ps-ui']:openMenu(chemMenu)
 end
 RegisterNetEvent('ps-drugprocessing:chemicalmenu', createChemicalMenu)
 
